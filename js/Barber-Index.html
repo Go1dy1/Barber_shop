@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Барбершоп «Бородинский»</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <header class="main-header">
+      <div class="container clearfix">
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <a href="Barber-Index.html">Информация</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="Barber-price-list.html">Прайс-лист</a>
+              </li>
+              <li>
+                <a href="Barber-shop.html">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-block">
+            <a class="login" href="#">Вход</a>
+          </div>
+      </div>
+    </header>
+    <main class="container">
+        <div class="index-logo">
+            <img src="../img/Borodinski_Logo.png" width="368" height="204" alt="Барбершоп Бородинский">
+        </div>
+      <section class="features clearfix">
+        <div class="features-item">
+          <b class="features-name">Быстро</b>
+          <p>Мы делаем свою работу быстро! Два часа <br>
+             пролетят незаметно, и вы - счастливый <br>
+              обладатель стильной стрижки-минутки!</p>
+        </div>
+        <div class="features-item">
+          <b class="features-name">Круто</b>
+          <p>Забудьте, как вы стриглись раньше. <br>
+            Мы сделаем из вас звезду футбола или кино! <br>
+            Во всяком случае внешне.</p>
+        </div>
+        <div class="features-item">
+          <b class="features-name">Дорого</b>
+          <p>Наши мастера – профессионалы своего дела и <br>
+            не могут стоить дешево. К тому же, разве цена <br>
+            не дает определённый статус?</p>
+        </div>
+      </section>
+          <div class="index-content clearfix">
+            <div class="index-content-left">
+              <h2 class="index-content-title">Новости</h2>
+              <ul class="news-preview">
+                <li>
+                  <p>Нам завезли выпивку и теперь вы
+                    можете пропустить стаканчик во время стрижки</p>
+                  <time datetime="2024-03-30">30 марта</time>
+                </li>
+                <li>
+                  <p>В нашей команде пополнение, Едвард «Руки-ножницы» садовник от мира волос, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+                  <time datetime="2024-03-20">20 марта</time>
+                </li>
+              </ul>
+              <a class="btn" href="#">Все новости</a>
+            </div>
+            <div class="index-content-right">
+                <h2 class="index-content-title">Фотогалерея</h2>
+                <div class="gallery">
+                  <figure class="gallery-content">
+                    <img src="../img/photo-bg-background.png" width="268" height="164"
+                     alt="">
+                  </figure>
+                  <button class="btn gallery-prev" disabled>Назад</button>
+                  <button class="btn gallery-next">Впёред</button>
+                </div>
+            </div>
+          </div>
+          <div class="index-content clearfix">
+              <div class="index-content-left">
+                <h2 class="index-content-title">Контактная информация</h2>
+                <p>
+                  Барбершоп Бородинский <br>
+                  Адрес: г. Киев, Соломенская, д 20/8 <br>
+                  Телефон +380(50) 112-22-66
+                </p>
+                <p>
+                  Время работы: <br>
+                  пн - пт: с 10:00 до 22:00 <br>
+                  сб - вс: с 10:00 до 19:00
+                </p>
+                <a class="btn" href="#">Как проехать</a>
+                <a class="btn" href="#">Обратная связь</a>
+              </div>
+              <div class="index-content-right">
+                  <h2 class="index-content-title">Записаться</h2>
+                  <p>Укажите желаемую дату и время и мы
+                    свяжемся с вами для подтверждения</p>
+                  <form class="appointment-form"
+                  action="https://eco.borodynsky.ua" method="post">
+                  <input type="text" name="date" value="" placeholder="Дата">
+                  <input type="text" name="time" value="" placeholder="Время">
+                  <input type="text" name="name" value="" placeholder="Ваше имя">
+                  <input type="tel" name="phone" value="" placeholder="Телефон">
+                  <button class="btn" type="submit">Отправить</button>
+                  </form>
+
+              </div>
+          </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container clearfix">
+        <section class="footer-contacts">
+          Барбершоп Бородинский <br>
+          Адрес: г. Киев, Соломенская, д 20/8 <br>
+          <a href="#">Как нас найти?</a> <br>
+          Телефон +380(50) 112-22-66
+        </section>
+        <section class="footer-social">
+          <p>Давайте дружить!</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
+        </section>
+        <section class="footer-copyright">
+          <p>Разработано:</p>
+          <a class="btn" href="#">Goldy inc.</a>
+        </section>
+      </div>
+    </footer>
+  </body>
+
+</html>
