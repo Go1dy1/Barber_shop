@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
 </head>
   <body class="shop">
@@ -21,7 +21,7 @@
               <li>
                 <a href="Barber-price-list.html">Прайс-лист</a>
               </li>
-              <li>
+              <li class="active">
                 <a href="Barber-shop.html">Магазин</a>
               </li>
               <li>
@@ -41,9 +41,9 @@
       <div class="bread-crumbs">
         <ul>
           <li> <a href="Barber-Index.html">Главная</a> </li>
-          <img src="../img/diamond.png" width="13" height="13" alt="">
+          <img src="img/diamond.png" width="13" height="13" alt="">
           <li> <a href="Barber-shop.html">Магазин</a> </li>
-          <img src="../img/diamond.png" width="13" height="13" alt="">
+          <img src="img/diamond.png" width="13" height="13" alt="">
           <li class="last-child"> Средства для ухода </li>
         </ul>
       </div>
@@ -51,18 +51,46 @@
         <form class="list-product-form" action="index.html" method="post">
           <fieldset>
             <legend class="legend-title">Производители:</legend>
-              <input type="checkbox" name="Baxter-of-California" value=""> Baxter of California <br>
-              <input type="checkbox" name="Mr-Natty" value=""> Mr Natty <br>
-              <input type="checkbox" name="Suavecito" value=""> Suavecito <br>
-              <input type="checkbox" name="Malin-Goetz" value=""> Malin Goetz <br>
-              <input type="checkbox" name="Murray`s" value=""> Murray`s <br>
-              <input type="checkbox" name="American-crew" value=""> American crew
+
+              <label class="remember-stroke" for="Baxter-of-California">
+                <input class="producers" type="checkbox" name="Baxter-of-California" id="Baxter-of-California" value="">
+              <span class="checkbox-indicator"></span>
+               Baxter of California <br> </label>
+               <label class="remember-stroke" for="Mr-Natty">
+                 <input class="producers" type="checkbox" name="Baxter-of-California" id="Mr-Natty" value="">
+               <span class="checkbox-indicator"></span>
+                Mr Natty <br> </label>
+              <label class="remember-stroke" for="Suavecito">
+                <input class="producers" type="checkbox" name="Baxter-of-California" id="Suavecito" value="">
+              <span class="checkbox-indicator"></span>
+                 Suavecito <br> </label>
+              <label class="remember-stroke" for="Malin-Goetz">
+                <input class="producers" type="checkbox" name="Baxter-of-California" id="Malin-Goetz" value="">
+              <span class="checkbox-indicator"></span>
+                Malin Goetz <br> </label>
+              <label class="remember-stroke" for="Murray`s">
+                <input class="producers" type="checkbox" name="Baxter-of-California" id="Murray`s" value="">
+              <span class="checkbox-indicator"></span>
+                Murray`s <br> </label>
+              <label class="remember-stroke" for="American-crew">
+                <input class="producers" type="checkbox" name="Baxter-of-California" id="American-crew" value="">
+              <span class="checkbox-indicator"></span>
+                American crew <br> </label>
           </fieldset>
           <fieldset>
             <legend class="legend-title">Группы товаров:</legend>
-              <input type="radio" name="list" value="britvinie-prinadleznosti">Бритвинные принадлежности <br>
-              <input type="radio" name="list" value="sredstva-dlya-uhoda">Средства для ухода <br>
-              <input type="radio" name="list" value="aksesuary">Аксесуары
+            <label class="radio-btn remember-stroke " for="britvinie-prinadleznosti">
+              <input class="product-group" type="radio" name="list" id="britvinie-prinadleznosti" value="britvinie-prinadleznosti">
+            <span class="checkbox-indicator"></span>
+              Бритвинные принадлежности <br> </label>
+            <label class="radio-btn remember-stroke " for="sredstva-dlya-uhoda">
+              <input class="product-group" type="radio" name="list" id="sredstva-dlya-uhoda" value="britvinie-prinadleznosti">
+            <span class="checkbox-indicator"></span>
+              Средства для ухода <br> </label>
+            <label class="radio-btn remember-stroke " for="aksesuary">
+              <input class="product-group" type="radio" name="list" id="aksesuary" value="britvinie-prinadleznosti">
+            <span class="checkbox-indicator"></span>
+              Аксесуары <br> </label>
           </fieldset>
         <button class="btn" name="button" type="submit">Показать</button>
         </form>
@@ -70,7 +98,7 @@
         <ul class="products ">
           <li>
             <div class="product">
-              <img src="../img/Barber-shop/Barber-price.png" width="220" height="165"
+              <img src="img/Barber-shop/Barber-price.png" width="220" height="165"
                alt="Baxter of California"><br>
               <a href="#"> <span class="Category">Набор для путешествий</span><br>
               <span class="title">«Baxter of California»</span> </a>
@@ -81,7 +109,7 @@
           </li>
           <li>
             <div class="product">
-              <img src="../img/Barber-shop/Barber-price.png" width="220" height="165"
+              <img src="img/Barber-shop/Barber-price.png" width="220" height="165"
                alt="Baxter of California"><br>
               <a href="#"> <span class="Category">Набор для путешествий</span><br>
               <span class="title">«Baxter of California»</span> </a>
@@ -92,7 +120,7 @@
           </li>
           <li>
             <div class="product">
-              <img src="../img/Barber-shop/Barber-price.png" width="220" height="165"
+              <img src="img/Barber-shop/Barber-price.png" width="220" height="165"
                alt="Baxter of California"><br>
               <a href="#"> <span class="Category">Набор для путешествий</span><br>
               <span class="title">«Baxter of California»</span> </a>
@@ -103,7 +131,7 @@
           </li>
           <li>
             <div class="product">
-              <img src="../img/Barber-shop/Barber-price.png" width="220" height="165"
+              <img src="img/Barber-shop/Barber-price.png" width="220" height="165"
                alt="Baxter of California"><br>
               <a href="#"> <span class="Category">Набор для путешествий</span><br>
               <span class="title">«Baxter of California»</span> </a>
@@ -114,7 +142,7 @@
           </li>
           <li>
             <div class="product">
-              <img src="../img/Barber-shop/Barber-price.png" width="220" height="165"
+              <img src="img/Barber-shop/Barber-price.png" width="220" height="165"
                alt="Baxter of California"><br>
               <a href="#"> <span class="Category">Набор для путешествий</span><br>
               <span class="title">«Baxter of California»</span> </a>
@@ -125,7 +153,7 @@
           </li>
           <li>
             <div class="product">
-              <img src="../img/Barber-shop/Barber-price.png" width="220" height="165"
+              <img src="img/Barber-shop/Barber-price.png" width="220" height="165"
                alt="Baxter of California"><br>
               <a href="#"> <span class="Category">Набор для путешествий</span><br>
               <span class="title">«Baxter of California»</span> </a>
@@ -164,6 +192,85 @@
         </section>
       </div>
     </footer>
+
+    <div class="modal-content">
+      <button class="modal-content-close" type="button"
+       title="Закрыть">Закрыть</button>
+       <h2 class="modal-content-title">Личный кабинет</h2>
+       <p>Введите свой логин и пароль.</p>
+       <form class="login-form" action="index.html" method="post">
+         <input class="icon-user" type="text" name="login" value="" placeholder="Логин">
+         <input class="icon-password" type="password" name="password" value="" placeholder="Пароль">
+         <div class="helpers-line">
+             <label class="remember-stroke" for="remember-me">
+               <input type="checkbox" name="remember" id="remember-me">
+             <span class="checkbox-indicator"></span>
+              Запомните меня</label>
+           <a href="#"> Забыли пароль?</a>
+         </div>
+         <button class="btn" type="submit" name="button">Войти</button>
+       </form>
+    </div>
+    <div class="modal-overlay"></div>
+
+    <button class="btn scroll-btn" onclick="toggleSidebar()"> <span class="scroll-icon"></span> </button>
+    <div class="sidebar">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="Barber-Index.html">Информация</a>
+          </li>
+          <li >
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="Barber-price-list.html">Прайс-лист</a>
+          </li>
+          <li class="active">
+            <a href="Barber-shop.html">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <style>
+    .modal-content-show{
+      display: block;
+      width: 295px;
+    }
+    </style>
+
+    <script>
+      function toggleSidebar() {
+        document.querySelector('.sidebar').classList.toggle('open');
+      }
+
+    </script>
+
+    <script>
+      var link_open= document.querySelector(".login");
+      var link_close= document.querySelector(".modal-content-close")
+      var popup= document.querySelector(".modal-content");
+
+        link_open.addEventListener("click",function(event)
+        {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+        console.log("Клик по ссылке вход");
+        }
+      );
+      link_close.addEventListener("click",function(event)
+      {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+      }
+    );
+    </script>
+
   </body>
 
 </html>

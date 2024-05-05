@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
   <body class="shop">
     <header class="main-header">
@@ -13,16 +14,16 @@
           <nav class="main-navigation">
             <ul>
               <li>
-                <a href="Barber-Index.html">Информация</a>
+                <a href="Index.html">Информация</a>
               </li>
               <li>
                 <a href="#">Новости</a>
               </li>
               <li>
-                <a href="Barber-price-list.html">Прайс-лист</a>
+                <a href="Price-list.html">Прайс-лист</a>
               </li>
               <li>
-                <a href="Barber-shop.html">Магазин</a>
+                <a href="Shop.html">Магазин</a>
               </li>
               <li>
                 <a href="#">Контакты</a>
@@ -41,21 +42,21 @@
       <div class="bread-crumbs">
         <ul>
           <li> <a href="Barber-Index.html">Главная</a> </li>
-          <img src="../img/diamond.png" width="13" height="13" alt="">
+          <img src="img/diamond.png" width="13" height="13" alt="">
           <li> <a href="Barber-shop.html">Магазин</a> </li>
-          <img src="../img/diamond.png" width="13" height="13" alt="">
+          <img src="img/diamond.png" width="13" height="13" alt="">
           <li> <a href="#">Средства для ухода</a> </li>
-          <img src="../img/diamond.png" width="13" height="13" alt="">
+          <img src="img/diamond.png" width="13" height="13" alt="">
           <li> <a class="article-number" href="#">Набор для путешествий Baxter of California</a> </li>
         </ul>
       </div>
       <div class="product-content clearfix">
         <div class="index-content-collage">
-          <img src="../img/Barber-item/first_item.png" width="460" height="500" alt="">
+          <img src="img/Barber-item/first_item.png" width="460" height="500" alt="">
           <ul>
-            <li> <img src="../img/Barber-item/second_item.png" width="140" height="150" alt=""> </li>
-            <li> <img src="../img/Barber-item/third_item.png" width="140" height="150" alt=""> </li>
-            <li> <img src="../img/Barber-item/fourth_item.png" width="140" height="150" alt=""> </li>
+            <li> <img src="img/Barber-item/second_item.png" width="140" height="150" alt=""> </li>
+            <li> <img src="img/Barber-item/third_item.png" width="140" height="150" alt=""> </li>
+            <li> <img src="img/Barber-item/fourth_item.png" width="140" height="150" alt=""> </li>
           </ul>
         </div>
           <div class="outline-product">
@@ -104,6 +105,83 @@
         </section>
       </div>
     </footer>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button"
+       title="Закрыть">Закрыть</button>
+       <h2 class="modal-content-title">Личный кабинет</h2>
+       <p>Введите свой логин и пароль.</p>
+       <form class="login-form" action="index.html" method="post">
+         <input class="icon-user" type="text" name="login" value="" placeholder="Логин">
+         <input class="icon-password" type="password" name="password" value="" placeholder="Пароль">
+         <div class="helpers-line">
+             <label class="remember-stroke" for="remember-me">
+               <input type="checkbox" name="remember" id="remember-me">
+             <span class="checkbox-indicator"></span>
+              Запомните меня</label>
+           <a href="#"> Забыли пароль?</a>
+         </div>
+         <button class="btn" type="submit" name="button">Войти</button>
+       </form>
+    </div>
+    <div class="modal-overlay"></div>
+
+    <button class="btn scroll-btn" onclick="toggleSidebar()"> <span class="scroll-icon"></span> </button>
+    <div class="sidebar">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="Index.html">Информация</a>
+          </li>
+          <li >
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="Price-list.html">Прайс-лист</a>
+          </li>
+          <li>
+            <a href="Shop.html">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <style>
+    .modal-content-show{
+      display: block;
+      width: 295px;
+    }
+    </style>
+
+    <script>
+      function toggleSidebar() {
+        document.querySelector('.sidebar').classList.toggle('open');
+      }
+
+    </script>
+
+    <script>
+      var link_open= document.querySelector(".login");
+      var link_close= document.querySelector(".modal-content-close")
+      var popup= document.querySelector(".modal-content");
+
+        link_open.addEventListener("click",function(event)
+        {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+        console.log("Клик по ссылке вход");
+        }
+      );
+      link_close.addEventListener("click",function(event)
+      {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+      }
+    );
+    </script>
   </body>
 
 </html>
