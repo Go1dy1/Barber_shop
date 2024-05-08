@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="import" src="">
 </head>
   <body>
     <header class="main-header ">
@@ -183,6 +184,21 @@
       </nav>
     </div>
 
+    <time class="clock" >
+      <span class="clock__hand clock__hand--hour"></span>
+      <span class="clock__hand clock__hand--minute"></span>
+      <span class="clock__hand clock__hand--second"></span>
+
+      <img class="clock__face" src="img/ciferblat.png" aria-hidden="true" role="presentation">
+        <circle class="clock__face-stroke"></circle>
+      </img>
+      <p class="clock_fonts twelve_oclock">12</p>
+      <p class="clock_fonts three_oclock">3</p>
+      <p class="clock_fonts six_oclock">6</p>
+      <p class="clock_fonts nine_oclock">9</p>
+    </time>
+    <script class="clock_work" type="text/javascript" src="js/clock.js"></script>
+
 
     <style>
     .modal-content-show{
@@ -191,11 +207,11 @@
     }
     </style>
 
+
     <script>
       function toggleSidebar() {
         document.querySelector('.sidebar').classList.toggle('open');
       }
-
     </script>
 
     <script>
